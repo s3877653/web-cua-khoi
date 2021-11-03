@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/a063a990c5.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <!-- header -->
+        <div class="header">
+            <ul class="nav-bar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">BAND</a></li>
+                <li><a href="#">TOUR</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">MORE
+                    <i class="fas fa-angle-down More-icon"></i>
+                </a>
+                    <ul class="sub-nav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search-button">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+        </div>
+        <!-- slider -->
+        <div class="slider">
+            <div class="text">
+                <h2 class="main-text">Chicago</h2>
+                <p class="text-des">Thank you, Chicago - A night we won't forget</p>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="content-section">
+            <!-- the band -->
+            <div class="content">
+                <h2 class="content-header">THE BAND</h2>
+                <p class="content-slogan">We love music</p>
+                <p class="text">
+                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="members">
+                    <div class="member">
+                        <p class="name">Name</p>
+                        <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="" class="img">
+                    </div>
+                    <div class="member">
+                        <p class="name">Name</p>
+                        <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="" class="img">
+                    </div>
+                    <div class="member">
+                        <p class="name">Name</p>
+                        <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="" class="img">
+                    </div>
+                </div>
+            </div>
+            <div class="tour-section">
+                <div class="contents">
+                    <h2 class="contents-header white-text">TOUR DATES</h2>
+                    <p class="contents-slogan white-text">Remember to book your tickets!</p>
+                </div>
+                <div class="ul-tickets">
+                    <li>September <span class="sold-out">Sold out</span></li>
+                    <li>October <span class="sold-out">Sold out</span></li>
+                    <li>November <span class="number">3</span></li>
+                </div>
+                <!-- cards -->
+                <div class="cards">
+                    <div class="full-card">
+                        <div class="card-img">
+                            <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="" class="img">
+                        </div>
+                        <div class="cart-text">
+                            <h3 class="card-name">New York</h3>
+                            <p class="card-date">Fri 27 Nov 2016</p>
+                            <p class="card-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button href="#" class="card-button js-card-button ">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="full-card">
+                        <div class="card-img">
+                            <img src="https://www.w3schools.com/w3images/paris.jpg" alt="" class="img">
+                        </div>
+                        <div class="cart-text">
+                            <h3 class="card-name">Paris</h3>
+                            <p class="card-date">Sat 28 Nov 2016</p>
+                            <p class="card-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo..</p>
+                            <button href="#" class="card-button js-card-button">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="full-card">
+                        <div class="card-img">
+                            <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="" class="img">
+                        </div>
+                        <div class="cart-text">
+                            <h3 class="card-name">San Francisco</h3>
+                            <p class="card-date">Sun 29 Nov 2016</p>
+                            <p class="card-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button href="#" class="card-button js-card-button">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div class="buy-tickets js-modal">
+          <div class="tickets-full-card js-modal-card">
+              <button class="exist-button js-exist-button">
+                <i class="fas fa-times"></i>
+              </button>
+              <header class="ticket-header">
+                <i class="fas fa-suitcase"></i>
+                Tickets
+              </header>
+              <div class="ticket-content">
+                <label for="How many" class="ticket-label">
+                    <i class="fas fa-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" id="How many" class="ticket-input" placeholder="How many?">
+                <label for="email" class="ticket-label">
+                    <i class="fas fa-user"></i>
+                    Send To
+                </label>
+                <input type="email" id="email" class="ticket-input" placeholder="Enter email">
+                <button class="paybutton">
+                    Pay <i class="fas fa-check"></i>
+                </button>
+              </div>
+              <div class="ticket-footer">
+                  <p>Need <a href="#">help?</a></p>
+              </div>
+
+          </div>  
+    </div>
+    
+<script>
+    const cardBtns = document.querySelectorAll('.js-card-button')
+    const modal = document.querySelector('.js-modal')
+    const exit = document.querySelector('.js-exist-button') 
+     const modalCart = document.querySelector('.js-modal-card')
+
+    function exitModal (){
+        modal.classList.remove('open')
+    }
+    function showModal (){
+        modal.classList.add('open')
+    }
+
+    for(const cardBtn of cardBtns){
+        cardBtn.addEventListener('click', showModal)
+    }
+    exit.addEventListener('click',  exitModal)
+    modal.addEventListener('click',  exitModal)
+    modalCart.addEventListener('click', function (event){
+        event.stopPropagation()
+    })
+</script>
+    
+</body>
+</html>

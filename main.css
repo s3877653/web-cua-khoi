@@ -1,0 +1,390 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header{
+    width: 100%;
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 2;
+}
+.clear{
+    clear: both;
+}
+.white-text{
+    color: white !important;
+}
+/* navbar */
+.nav-bar{
+    display: flex;
+
+}
+.nav-bar ul{
+    list-style: none;
+}
+.nav-bar li{
+    display: inline-block;
+    position: relative;
+    
+}
+.nav-bar>li>a{
+    color: white;
+}
+.nav-bar li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display:inline-block
+}
+
+.nav-bar>li:hover>a{
+    background-color: #ccc;
+    color: black;
+    transition: 0.3s;
+}
+.nav-bar .sub-nav {
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    background-color: white;
+    display: none;
+    min-width: 160px;
+}
+
+.nav-bar .sub-nav a{
+    color: black;
+    
+    width: 100%;
+    padding: 0 12px;
+}
+
+.nav-bar .sub-nav li{
+    display: block;
+}
+
+.nav-bar .sub-nav li:hover{
+    background-color: #ccc;
+}
+
+.nav-bar li:hover .sub-nav {
+    display: block;
+}
+.search-button{
+    float: right;
+    position: fixed;
+    top: 0px;
+    right:0;
+}
+.More-icon{
+    color: white;
+}
+.nav-bar li:hover .More-icon{
+    color: black;
+}
+.search-icon{
+    color: white;
+    padding: 0 24px;
+    line-height: 46px;
+}
+.search-icon:hover{
+    background-color: #f44336
+}
+
+/* slider */
+.slider{
+    background: url('https://www.w3schools.com/w3images/chicago.jpg') top center / cover no-repeat;
+    margin-top: 46px;
+    padding-top: 50%;
+    text-align: center;
+    position: relative;
+    
+    
+}
+.slider .text{ 
+    position: absolute;
+    bottom: 47px;
+    color: white;
+    width: 100%;
+
+}
+.slider .text .main-text{
+   margin-bottom: 25px;
+   font-weight: 500;
+   font-size: 25px;
+}
+.slider .text .text-des{
+    font-size: 15px;
+}
+
+/* content */
+.content{
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+   
+    width: 800px;
+}
+.content .content-header{
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.contents-header{
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.content .content-slogan{
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+}
+.contents-slogan{
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    margin: 15px 0;
+}
+.content .text{
+    text-align: justify;
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* members */
+.members{
+    display: flex;
+    justify-content: space-around;
+    text-align:center;
+    padding: 32px 0;
+}
+.members .name{
+    padding: 15px;
+}
+.members .img{
+    width: 154px;
+}
+
+/* tour */
+.tour-section{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+
+}
+.contents{
+    padding-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+.ul-tickets{
+    background-color: white;
+    margin: 0 320px;
+}
+.ul-tickets li{
+    padding: 3px 16px;
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+    color:#757575;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.ul-tickets .sold-out{
+    background-color: #f44336;
+    padding: 3px 8px;
+    color: white;
+    margin-left: 16px;
+}
+.ul-tickets .number{
+    float: right;
+    padding: 0 8px;
+    margin-right: 16px;
+    background-color: black;
+    width: 24px;
+    height: 24px;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 23px;
+    margin-top: -2px;
+}
+
+/* cards */
+.cards{
+    display: flex;
+    margin-left: 304px;
+    margin-right: 320px;
+    justify-content: space-around;
+    margin-top: 16px;
+    
+}
+.full-card{
+    margin-left: 16px;
+    overflow: hidden;
+    display: block;
+}
+.card-img .img{
+    width: 100%;
+    display:block;
+}
+.card-img .img:hover{
+    opacity: 0.7;
+}
+.cart-text{
+    background-color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+}
+.card-name{
+    padding-top: 10px;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: bolder;
+}
+.card-date{
+    font-size: 10px;
+    
+    opacity: 0.60;
+    margin: 13px 0;
+}
+.card-desc{
+    font-size: 13px;
+    
+    margin: 13px 0;  
+}
+.card-button{
+    padding: 5px 13px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    border:none;
+}
+.card-button:hover{
+    color: black;
+    background-color: #ccc;
+
+    /* modal */
+}
+.buy-tickets{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    animation:modal-ani ease 0.4s;
+}
+.tickets-full-card{
+    background-color: white;
+    width: 900px;
+    min-height: 300px;
+    position: relative;
+}
+.exist-button{
+    position:absolute;
+    top:0;
+    right:0;
+    background-color: #009688;
+    border: none;
+    cursor: pointer;
+    color:white;
+    font-size: 24px;
+    padding: 8px 16px;
+}
+.exist-button:hover{
+    opacity: 0.8;
+}
+.ticket-header{
+    width:100%;
+    height: 128px;
+    color: white;
+    letter-spacing: 4px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    background-color: #009688;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ticket-content{
+    padding: 0 16px; 
+    font-size: 15px;
+}
+.ticket-label{
+    display:block;
+    margin-top:15px;
+    margin-bottom: 6px;
+}
+.ticket-input{
+    padding: 8px;
+    width: 100%;
+}
+.paybutton{
+    display:block;
+    width: 100%;
+    padding:16px;
+    margin: 16px 0;
+    color: white;
+    background-color: #009688;
+    border: none;
+    cursor: pointer;
+}
+.paybutton:hover{
+    opacity:0.8;
+}
+.ticket-footer{
+    margin: 15px 16px;
+    text-align: right;
+}
+.ticket-footer a{
+    color:#2196F3;
+}
+.open{
+    display: flex;
+}
+
+@keyframes modal-ani{
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
