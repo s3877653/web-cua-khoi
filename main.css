@@ -81,6 +81,7 @@ html{
     position: fixed;
     top: 0px;
     right:0;
+   
 }
 .More-icon{
     color: white;
@@ -205,20 +206,22 @@ html{
     padding: 3px 8px;
     color: white;
     margin-left: 16px;
+    font-family: "Lato", sans-serif;  
 }
 .ul-tickets .number{
     float: right;
-    padding: 0 8px;
+    padding-right:8px;
+    padding-left: 7px;
     margin-right: 16px;
     background-color: black;
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     color: white;
     border-radius: 50%;
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 23px;
-    margin-top: -2px;
+    
 }
 
 /* cards */
@@ -373,6 +376,78 @@ html{
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* contact */
+.contact-section{
+    display: flex;
+    padding: 32px 0;
+    margin-top: 15px;
+}
+.contact-info{
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i{
+    padding: 7px;
+}
+.contact-input{
+    width: 50%;
+    font-size: 15px;
+    
+}
+.contact-name, .contact-email, .message{
+    padding: 8px;
+    border: 1px solid #ccc;
+} 
+.contact-name, .contact-email{
+    width: 49%;
+}
+.contact-email{
+    margin-left: 2.7px;
+}
+.message{
+    width:100%;
+    margin-top: 10px;
+}
+.contact-submit{
+    margin: 16px 0;
+    padding: 8px 16px;
+    background-color: black;
+    border: none;
+    color: white;
+    float: right;
+    cursor: pointer;
+}
+.contact-submit:hover{
+    background-color: #ccc;
+    color: black;
+}
+.map img{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    height: 216px;
+    text-align: center;
+    padding: 64px 16px;
+    background-color: #f1f1f1;
+    opacity: 0.6;
+}
+.links{
+    font-size: 24px;
+}
+.links i:hover{
+    opacity:0.4;
+}
+.footer-text{
+    margin: 15px 0px;
+    font-size: 15px;
+}
+.footer-text a{
+    
+    color: black;
 }
 
 
