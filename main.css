@@ -80,7 +80,10 @@ html{
     position: fixed;
     top: 0px;
     right:0;
-    height: 46px;
+    
+}
+.search-button i{
+    line-height: 46px;
 }
 .More-icon{
     color: white;
@@ -91,7 +94,7 @@ html{
 .search-icon{
     color: white;
     padding: 0px 24px;
-    line-height: 46px;
+    
     
 }
 .search-icon:hover{
